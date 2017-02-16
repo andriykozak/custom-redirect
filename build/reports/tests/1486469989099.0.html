@@ -1,0 +1,778 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="application/xhtml; charset=UTF-8" http-equiv="content-type" /><title>Login - Dealer Management System V9</title> 
+    
+<link type="text/css" rel="stylesheet" media="screen" href="/css/jquery-ui/jquery-ui-1.8rc3.custom.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/css/jquery.tooltip.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/css/del_styl.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/css/style.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/css/jqueryslidemenu.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/css/jquery.jgrowl.css" />
+<link type="image/x-icon" rel="icon" href="/images/favicon.ico" />
+<link type="image/x-icon" rel="shortcut icon" href="/images/favicon.ico" />
+
+<script src="/js/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="/js/jalert.js" type="text/javascript"></script>
+<script src="/js/jquery/jquery.jgrowl.js" type="text/javascript"></script>
+<script src="/js/jquery/jquery-ui-1.8.2.dialog.js" type="text/javascript"></script>
+<script src="/js/jquerystatus.js" type="text/javascript"></script>
+<script src="/js/jquery/jquery.validate.js" type="text/javascript"></script>
+<script type="text/javascript">
+    //&lt;![CDATA[
+var news_ajax_link = '/dms/login/ajax';
+var newsList = [{"name":"Autoxloo extends the business strategy to SA auto market","date":"Dec 22, 2016 - 06:08:06 am","id":"news_1719","news_type":"Update"},{"name":"New Google SSL requirements","date":"Dec 13, 2016 - 02:53:47 am","id":"news_1707","news_type":"Update"},{"name":"Autoxloo announces partnership with Goraceit","date":"Dec 02, 2016 - 01:32:11 am","id":"news_1705","news_type":"Update"},{"name":"Automotive PPC","date":"Jun 18, 2016 - 03:30:41 am","id":"news_1441","news_type":"Update"},{"name":"Autoxloo dealer websites are available in UK","date":"May 25, 2016 - 03:17:19 am","id":"news_1439","news_type":"Update"},{"name":"Offsite SEO Management","date":"Feb 03, 2016 - 03:12:06 am","id":"news_1437","news_type":"Update"},{"name":"On Site SEO Management","date":"Nov 18, 2015 - 03:02:52 am","id":"news_1295","news_type":"Update"},{"name":"The Smartest Way to Sell Vehicles","date":"Oct 06, 2015 - 04:38:14 am","id":"news_1279","news_type":"Update"},{"name":"Walking-Talking Testimonials","date":"Aug 28, 2015 - 08:25:43 am","id":"news_1271","news_type":null},{"name":"Create Dynamic Discount System","date":"Jun 10, 2015 - 02:36:26 am","id":"news_1003","news_type":"Update"},{"name":"Go Live with Live Video Streaming\u2122","date":"Mar 23, 2015 - 08:20:59 am","id":"news_835","news_type":"Update"},{"name":" Integration with Smart Auction","date":"Jan 21, 2015 - 02:27:40 am","id":"news_747","news_type":"Update"},{"name":" Slingshot Mobile: Perfect for Mobile Inventory Management","date":"Dec 10, 2014 - 08:56:20 am","id":"news_691","news_type":"Update"},{"name":" Successful Posting to Classified Services","date":"Oct 29, 2014 - 07:30:17 am","id":"news_683","news_type":"Update"},{"name":" \u201cWow\u201d experience on YouTube with Autoxloo","date":"Sep 09, 2014 - 06:12:28 am","id":"news_681","news_type":"Update"},{"name":"Mobile Car Dealer Websites Redefined!","date":"Jul 18, 2014 - 07:21:20 am","id":"news_679","news_type":"Update"},{"name":" Multimedia Tools: Make your Dealer Website Dynamic","date":"Jun 11, 2014 - 07:16:50 am","id":"news_637","news_type":"Update"},{"name":" Adaptive Design vs Responsive Design","date":"May 29, 2014 - 07:12:08 am","id":"news_635","news_type":"Update"},{"name":"Etch-A-Word: Create Unique Branded Inventory","date":"Apr 21, 2014 - 07:02:03 am","id":"news_621","news_type":"Update"},{"name":"Choose your DMS Partner Wisely","date":"Mar 19, 2014 - 06:22:03 am","id":"news_615","news_type":"Update"},{"name":"Create Event Driven Dynamic Online Experience","date":"Feb 21, 2014 - 08:49:04 am","id":"news_611","news_type":"Update"},{"name":"Nonstop CRM Integration","date":"Jan 17, 2014 - 07:19:30 am","id":"news_607","news_type":"Update"},{"name":"Create your Truck Dealer Website with Autoxloo","date":"Dec 19, 2013 - 07:05:04 am","id":"news_605","news_type":"Update"},{"name":"CRM and Phone Integration made easy ","date":"Nov 14, 2013 - 08:48:48 am","id":"news_583","news_type":"Update"},{"name":"Make-A-Form\u2122: DIY Management","date":"Oct 22, 2013 - 02:13:32 am","id":"news_517","news_type":"Update"},{"name":"Make-A-Coupon\u2122: Quick custom coupon","date":"Sep 18, 2013 - 02:13:44 am","id":"news_515","news_type":"Update"},{"name":"QR code: Improve your marketing","date":"Aug 15, 2013 - 01:36:55 am","id":"news_497","news_type":"Update"},{"name":"SEO: Get traffic to your website","date":"Jul 16, 2013 - 02:14:14 am","id":"news_495","news_type":"Update"},{"name":" Buyer's Guide Automation: Seamless delivery to your printer","date":"Jun 12, 2013 - 01:39:43 am","id":"news_489","news_type":"Update"},{"name":"  Vehicle Inspection Report\u2122: avoid the minefield","date":"May 13, 2013 - 04:17:10 am","id":"news_483","news_type":"Update"},{"name":" Design &amp;amp; Content Management with Make-A-Page\u2122","date":"Apr 10, 2013 - 02:15:03 am","id":"news_477","news_type":"Update"},{"name":"E-brochure: Let's Put The Print Back Into Your Dealership","date":"Mar 06, 2013 - 02:13:06 am","id":"news_475","news_type":"Update"},{"name":" Be Available 24\/7: Mobile Optimized Solutions","date":"Feb 04, 2013 - 02:15:34 am","id":"news_473","news_type":"Update"},{"name":" Dealerships are on the FTC\u2019s radar screen","date":"Jan 17, 2013 - 02:20:43 am","id":"news_471","news_type":"Update"},{"name":"Pinterest Madness: Join Us! ","date":"Dec 28, 2012 - 04:24:55 am","id":"news_461","news_type":"Update"},{"name":"Convert Visitors Into Customers","date":"Dec 21, 2012 - 08:17:37 am","id":"news_458","news_type":"News"},{"name":"CRM: From First Contact to Sale and Beyond","date":"Dec 14, 2012 - 02:43:49 am","id":"news_456","news_type":"News"},{"name":"You Are As Good As Your Customers Say You Are","date":"Nov 02, 2012 - 08:48:04 am","id":"news_469","news_type":"Update"},{"name":"Think Of Us As Your Personal Concierge","date":"Oct 22, 2012 - 04:11:00 am","id":"news_467","news_type":"Update"},{"name":"New Dealer Review Widget ","date":"Jan 05, 2012 - 09:39:46 am","id":"news_340","news_type":"Update"},{"name":"Keep Track of Your Inventory with The History Feature","date":"Dec 06, 2011 - 09:37:40 am","id":"news_289","news_type":"News"},{"name":"Easy Way to Post Your Vehicles on Twitter","date":"Nov 07, 2011 - 09:37:20 am","id":"news_266","news_type":"Update"},{"name":"In Case You Haven't Heard, Its All Going Mobile! ","date":"Jun 02, 2011 - 09:36:44 am","id":"news_121","news_type":"News"},{"name":"Call It What You Like, But It's Still A MicroSite!","date":"May 26, 2011 - 09:35:47 am","id":"news_120","news_type":"News"},{"name":"Video manager ","date":"Apr 01, 2011 - 12:00:00 am","id":"news_107","news_type":"Update"},{"name":"Dynamic Menu can help increase sales conversion","date":"Jan 19, 2011 - 09:02:04 am","id":"news_33","news_type":"News"}];
+    //]]&gt;
+</script>
+<script type="text/javascript">
+    //&lt;![CDATA[
+  $(document).ready(function () {
+    /*&lt;Start&gt; News List Section*/
+    var listSize = 4;
+    var currentPage = 0;
+    var pagesNum = 1;
+    var newsListPages = Array();
+
+    setNewsList(newsList);
+
+    function setNewsList(list) {
+      clearNewsList();
+      if (list.length) {
+        var odd = true;
+        var num = 0;
+        var page = -1;
+        var items = list.length;
+        if (currentPage &gt;= items / listSize) {
+          currentPage = -1;
+          for (i = 0; i &lt; items; i++) {
+            if (i % listSize == 0)
+              currentPage++;
+          }
+        }
+        for (i in list) {
+          if (list[i].id &amp;&amp; list[i].name &amp;&amp; list[i].date) {
+            var id = list[i].id;
+            var name = list[i].name;
+            var date = list[i].date;
+            //var news_type = list[i].news_type;
+            var itemOnPage = num % listSize;
+            if (itemOnPage == 0) {
+              newsListPages[++page] = Array();
+              pagesNum = page + 1;
+            }
+            newsListPages[page][itemOnPage] = id;
+//            $('#news_list').append('&lt;tr class="newsRow" id="' + id + '"&gt;&lt;/tr&gt;');
+            $('#news_list').append('&lt;div class="news-item" id="' + id + '"&gt;&lt;a href="#" title=""&gt;' + name + '&lt;/a&gt;&lt;span class="date"&gt;' + date + '&lt;/span&gt;&lt;/div&gt;');
+            newsRow = $('#news_list').find('#' + id);
+//            if (!odd)
+//              newsRow.addClass('tr_news');
+//            else
+//              newsRow.addClass('tr_news_bg');
+            if (num &lt; listSize * currentPage || num &gt;= listSize * (currentPage + 1))
+              newsRow.hide();
+
+//            newsRow.append('&lt;td width="540"&gt;&lt;a href="#" class="news"&gt;' + name + '&lt;/a&gt;&lt;/td&gt;');
+//            //newsRow.append('&lt;td width="150" align="center"&gt;'+news_type+'&lt;/td&gt;');
+//            newsRow.append('&lt;td width="150" align="right"&gt;' + date + '&lt;/td&gt;');
+
+            newsRow.find('a').click(function () {
+              news_id = $(this).parents('.news-item').attr('id').substr(5);
+              loadNews(news_id);
+              return false;
+            });
+          }
+          odd = !odd;
+          num++;
+        }
+        setPaginator();
+      }
+    }
+
+    function clearNewsList() {
+      $('#news_list').html('');
+    }
+
+    function setPaginator() {
+      $('#news_paginator').html('');
+      if (pagesNum &gt; 1) {
+        paginator = $('#news_paginator');
+        for (i = 0; i &lt; pagesNum; i++) {
+          if (i != currentPage) {
+            paginator.append('&lt;a href="javascript: void(0);" id="news_page_' + i + '"&gt;' + (i + 1) + '&lt;/a&gt;');
+            paginator.find('#news_page_' + i).click(function () {
+              changePage($(this).attr('id').substr(10));
+              return false;
+            });
+          }
+          else {
+            page_elem = $('&lt;a href="javascript: void(0);" class="selected"&gt;' + (i + 1) + '&lt;/a&gt;');
+            paginator.append(page_elem);
+          }
+          if (i != (pagesNum - 1)) {
+            paginator.append(' | ');
+          }
+        }
+      }
+    }
+
+    function changePage(page) {
+      if (newsListPages &amp;&amp; newsListPages.length &amp;&amp; newsListPages[page]) {
+        currentPage = page;
+        $('#news_list .news-item').hide();
+        for (i in newsListPages[currentPage]) {
+          row = $('#' + newsListPages[currentPage][i]);
+          if (row.length)
+            row.show();
+        }
+        setPaginator();
+      }
+    }
+
+    /*&lt;End&gt; News List Section*/
+
+    /*&lt;Start&gt; News Data Section*/
+    function loadNews(news_id) {
+      statusOpen("Loading News Information...", 0);
+      $.ajax({
+        url: news_ajax_link,
+        data: {oper: 'load', news_id: news_id},
+        type: 'POST',
+        dataType: 'json',
+        success: function (result) {
+          statusRemove();
+          if (result) {
+            openNews(result);
+          }
+        }
+      });
+    }
+
+    /*&lt;End&gt; news Data Section*/
+
+    /*&lt;Start&gt; News Section*/
+
+    function openNews(news_data) {
+      $('BODY').append('&lt;div id="news_viewer"&gt;&lt;/div&gt;');
+      $('#news_viewer').html(news_data.text);
+      $('#news_viewer').dialog({
+        title: news_data.date + ' - ' + news_data.title,
+        width: 950,
+        modal: true,
+        close: function () {
+          $('#news_viewer').remove();
+        }
+      });
+    }
+
+    /*&lt;End&gt; News Section*/
+  });
+      //]]&gt;
+</script>
+<script src="/js/jquery/jquery.tooltip.pack.js" type="text/javascript"></script>
+<script src="/js/dms_resize.js" type="text/javascript"></script>
+<script src="/js/dms_menu.js" type="text/javascript"></script>
+<script src="/js/KeyUppressForForm.js" type="text/javascript"></script>
+<script src="/js/validation_rules.js" type="text/javascript"></script><script type="text/javascript">
+    $(document).ready(function(){
+                    $('#login-form').validate({
+    rules:{
+            login: {
+                                    loginRule2: true,
+                                    },
+            password: {
+                                    required: true,
+                                    },
+        }
+    });
+            });
+</script>
+</head>
+<body>
+<div id="height_body">
+
+
+
+<style>
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS';
+  background: #fff !important;
+
+}
+/*
+@media (min-width:1600px){
+  body {
+    overflow: hidden;
+  }
+}
+*/
+
+#height_body{
+  overflow: auto;
+}
+input{
+  margin:0;
+  border:0;
+  padding:0;
+  display:inline-block;
+  vertical-align:middle;
+  white-space:normal;
+}
+ 
+input:focus
+{
+   outline: none;
+}
+  
+
+a{
+  color:#fff;
+  font-size: 14px;
+}
+
+a:hover{
+  text-decoration:none;
+}
+
+a.selected {
+  text-decoration:none;
+  opacity: 0.7;
+}
+
+.login-section{
+  margin-top: 0.1%;
+}
+
+@media (max-width:1279px){
+  .login-section{
+    margin-top: 0;
+  }
+}
+
+.clearfix{
+  clear: both;
+}
+.outer{
+  width: 990px;
+  height: 400px;
+  padding: 5px;
+  margin:0 auto;
+  background-color: #a2d9f5;
+  border-radius: 13px;
+  -moz-border-radius: 13px;
+  -webkit-border-radius: 13px;
+  border: 0px solid #000000;
+}
+
+.inner{
+  width: 990px;
+  height: 335px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  /*background: -webkit-gradient(radial, center center, 0, center center, 505, color-stop(0, #13CAF7), color-stop(1, #0E78B3));*/
+  background-color: #0e78b3;
+  background-image: url(/images/dms_home/bg-main.png);
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border: 0px solid #000000;
+
+}
+
+.login-area{
+  width: 350px;
+  margin-left: 30px;
+  margin-right: 30px;
+  float: left;
+  overflow: hidden;
+}
+
+.news-area{
+  width: 550px;
+  height: 250px;
+  float: right;
+  margin-right: 30px;
+}
+
+.title{
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  border-bottom: 1px solid #0b7094; 
+}
+
+.title h2{
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS';
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 1px 1px 0 #16325c;
+  text-transform: uppercase;
+}
+
+.login-form{
+  width: 100%;
+  padding-top: 30px;
+  border-top: 1px solid #58bde1;
+}
+
+.input-area{
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+}
+.label{
+  width: 85px;
+  height: 40px;
+  line-height: 40px;
+  padding-right: 10px;
+  text-align: right;
+  font-size: 14px;
+  color: #ecf0f1;
+  text-shadow: 1px 1px 0 #16325c;
+  float: left;
+  margin: 0;
+}
+
+.input-area input{
+  width: 205px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 35px;
+  line-height: 40px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0px 0px #71cfed, #bfc6ca 0px 3px 3px 0px inset;
+  -webkit-box-shadow: 1px 1px 0px 0px #71cfed, #bfc6ca 0px 3px 3px 0px inset;
+  -moz-box-shadow: 1px 1px 0px 0px #71cfed, #bfc6ca 0px 3px 3px 0px inset;
+  background: #eff7fd;
+  border: 1px solid #0082B4;
+  font-size: 14px;
+  color:#333;
+
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+.input-area input:focus{
+  width: 205px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 35px;
+  line-height: 40px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(255,255,255, 1), #bfc6ca 0px 3px 3px 0px inset;
+  -webkit-box-shadow: 0 0 8px rgba(255,255,255, 1), #bfc6ca 0px 3px 3px 0px inset;
+  -moz-box-shadow: 0 0 8px rgba(255,255,255, 1), #bfc6ca 0px 3px 3px 0px inset;
+  background: #eff7fd;
+  border: 1px solid #0082B4;
+}
+
+.icon{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top:15px;
+  right: 13px;
+  color:#0084BE;
+  font-size: 13px;
+}
+
+.remember-me{
+  width: 250px;
+  margin-left: 96px; 
+  margin-bottom: 10px;
+}
+
+.remember-me label{
+  font-size: 12px;
+  color: #ecf0f1;
+  text-shadow: 1px 1px 0 #16325c;
+  cursor: pointer;
+}
+
+.remember-me input{
+  float: left;
+  margin-right: 10px;
+}
+
+.login-btn:hover{
+  background-color: red !important;
+}
+
+.login-btn{
+  width: 100px;
+  height: 40px;
+  float: right;
+  margin-right: 2px;
+  line-height: 40px;
+  cursor: pointer;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #2b83b4;
+  box-shadow: 1px 1px 0px 0px #00D3F1;
+  -webkit-box-shadow: 1px 1px 0px 0px #00D3F1;
+  -moz-box-shadow: 1px 1px 0px 0px #00D3F1;
+
+  background: #fce94f;
+  background: -moz-linear-gradient(top, #fce94f 0%, #edd400 50%, #d0a211 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fce94f), color-stop(50%,#edd400), color-stop(100%,#d0a211));
+  background: -webkit-linear-gradient(top, #fce94f 0%,#edd400 50%,#d0a211 100%);
+  background: -o-linear-gradient(top, #fce94f 0%,#edd400 50%,#d0a211 100%);
+  background: -ms-linear-gradient(top, #fce94f 0%,#edd400 50%,#d0a211 100%); 
+  background: linear-gradient(to bottom, #fce94f 0%,#edd400 50%,#d0a211 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fce94f', endColorstr='#d0a211',GradientType=0 );
+
+  font-family: 'Trebuchet MS' !important;
+  font-size: 14px;
+  font-weight: 600;
+  color: #52390e;
+  text-shadow: 1px 1px 0 #F9EC93;
+
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+}
+
+.login-btn:hover{
+  /*
+  box-shadow: 0 0 8px rgba(255,255,255, 1);
+  -webkit-box-shadow: 0 0 8px rgba(255,255,255, 1);
+  -moz-box-shadow: 0 0 8px rgba(255,255,255, 1);
+  */
+  background: #fce94f;
+  background: -moz-linear-gradient(top, #fce94f 0%, #edd400 50%, #d48c02 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fce94f), color-stop(50%,#edd400), color-stop(100%,#d48c02));
+  background: -webkit-linear-gradient(top, #fce94f 0%,#edd400 50%,#d48c02 100%);
+  background: -o-linear-gradient(top, #fce94f 0%,#edd400 50%,#d48c02 100%);
+  background: -ms-linear-gradient(top, #fce94f 0%,#edd400 50%,#d48c02 100%); 
+  background: linear-gradient(to bottom, #fce94f 0%,#edd400 50%,#d48c02 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fce94f', endColorstr='#d48c02',GradientType=0 );
+
+}
+
+.news-wrap{
+  width: 100%;
+  padding-top: 30px;
+  border-top: 1px solid #58bde1;
+}
+
+.news-item{
+  width: 530px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  background-color: rgba(20, 66, 112, 0.45);
+  background: rgba(20, 66, 112, 0.45);
+  color:#ecf0f1;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+.news-item:hover{
+
+  background-color: rgba(20, 66, 112, 0.30);
+  background: rgba(20, 66, 112, 0.30);
+
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+.news-item:nth-of-type(even){
+  background-color: rgba(20, 66, 112, 0.35);
+  background: rgba(20, 66, 112, 0.35);
+}
+
+.news-item:nth-of-type(even):hover{
+  background-color: rgba(20, 66, 112, 0.30);
+  background: rgba(20, 66, 112, 0.30);
+
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+.news-item a{
+  display: inline-block;
+  width: 375px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.date{
+  font-size: 12px;
+  float: right;
+  color: #ecf0f1;
+}
+
+.news-nav{
+  width: 550px;
+  text-align: right;
+  padding-top: 10px;
+}
+
+.news-nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-nav ul li{
+  list-style: none;
+  display: inline; 
+}
+
+.learn-more{
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  background-color: #134d7d;
+  margin-top: 12px;
+  border-top: 1px solid #61b2d7;
+  -webkit-box-shadow: 0px 1px 0px 0px #61b2d7;
+  -moz-box-shadow: 0px 1px 0px 0px #61b2d7;
+  box-shadow: 0px 1px 0px 0px #61b2d7;
+}
+
+.learn-more p{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #ecf0f1;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #061e41;
+}
+
+.learn-more a{
+  font-size: 14px;
+  color: #78bee0;
+  text-transform: uppercase;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+.learn-more a:hover{
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.big-shadow{
+  width: 1106px;
+  height: 57px;
+  margin: 0 auto;
+  background-image:url(/images/dms_home/big-shadow.png); 
+}
+
+
+/*-----------------------------  HEADER  ----------------------------------*/
+.head{
+  width: 970px;
+  padding: 15px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/*-----------------------------  PARTNERS  ----------------------------------*/
+
+.partners{
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.logo-sm{
+  width: 70px;
+  height: 40px;
+  margin-right: 10px;
+  float: left;
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: opacity 0.30s ease-in-out;
+  -moz-transition: opacity 0.30s ease-in-out;
+  -ms-transition: opacity 0.30s ease-in-out;
+  -o-transition: opacity 0.30s ease-in-out;
+}
+
+.logo-sm:hover{
+  opacity: 0.5;
+}
+.logo-sm a{
+    width:100%; height: 100%; display:block;
+}
+.logo-sm:last-child{
+  margin-right: 0 !important;
+}
+
+.logo-sm:first-child{
+  margin-left: 25px;
+}
+.ebay{background-image: url(/images/dms_home/partners-ico.png);}
+
+.auto{
+  background-image: url(/images/dms_home/partners-ico.png);
+  background-position: -85px;
+}
+.ove{
+  background-image: url(/images/dms_home/partners-ico.png);
+  background-position: -167px;
+}
+.ally{
+  background-image: url(/images/dms_home/partners-ico.png);
+  background-position: -250px;
+}
+.auto-trader{
+  background-image: url(/images/dms_home/partners-ico.png);
+  background-position: -335px;
+}
+.craigslist{
+  background-image: url(/images/dms_home/partners-ico.png);
+  background-position: -418px;
+}
+.facebook{
+  background-image: url(/images/dms_home/partners-ico.png);
+  background-position: -502px;
+}
+.cars{
+  background-image: url(/images/dms_home/partners-ico.png);
+  background-position: -585px;
+}
+
+.kijiji{
+  background-image: url(/images/dms_home/partners-ico.png);
+  background-position: -668px;
+}
+.carfax{
+  background-image: url(/images/dms_home/partners-ico.png);
+  background-position: -752px;
+}
+.google{
+  background-image: url(/images/dms_home/partners-ico.png);
+  background-position: -834px;
+}
+.adesa{
+  background-image: url(/images/dms_home/partners-ico.png);
+  background-position: -920px;
+}
+
+.login-text-errors, label.error{
+  color: #F7E234;
+  font-size:15px;
+  text-align: right;
+  padding-right:5px;
+  text-shadow: 1px 1px 0 #16325c;
+}
+
+/*---------------------------------------------------------------*/
+</style>
+
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       background-image:url(img/ie-btn-bg.jpg); 
+    }
+  </style>
+<![endif]-->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+<div class="login-section">
+  <div class="head">
+    <div class="float-left-img"><a target="_blank" title="Autoxloo.com" href="http://autoxloo.com"><img alt="Autoxloo" src="/images/dms_home/logo.png" /></a></div>
+    <div class="float-right-img"><a target="_blank" title="Live Chat" href="http://www.autoxloo.com/support/livehelp.php?department=1&amp;cslheg=1"><img width="164" height="65" alt="Live Chat" src="/images/dms_home/live-chat-button.png" /></a></div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="outer">
+    <div class="inner">
+      <div class="login-area">
+        <div class="title"><h2>Login to your Account</h2></div>
+        <div class="login-form">
+          <form method="post" action="/dms/login/process" enctype="application/x-www-form-urlencoded" id="login-form" name="login">
+
+            <div class="input-area">
+              <p class="label">Login:</p>
+              <input type="text" value="" id="login" name="login" />
+              <div class="icon"><i class="fa fa-user fa-lg"></i></div>
+              <div class="login-text-errors" name="login_error" id="login_error">
+                                              </div>
+            </div>
+            <div class="input-area">
+              <p class="label">Password:</p>
+              <input type="password" value="" id="password" name="password" />
+              <div class="icon"><i class="fa fa-unlock-alt fa-lg"></i></div>
+              <div class="login-text-errors" id="password_error"></div>
+            </div>
+            <div class="remember-me"><input type="checkbox" value="1" id="remember" name="remember" /><label for="remember">Remember my ID on this computer</label></div>
+            <input type="submit" id="login2" name="login2" value="Sign In" title="Sign In" class="login-btn" />
+          </form>
+        </div>
+      </div>
+      <div class="news-area">
+        <div class="title"><h2>News and Updates</h2></div>
+        <div class="news-wrap">
+          <div id="news_list"><div id="news_1719" class="news-item"><a title="" href="#">Autoxloo extends the business strategy to SA auto market</a><span class="date">Dec 22, 2016 - 06:08:06 am</span></div><div id="news_1707" class="news-item"><a title="" href="#">New Google SSL requirements</a><span class="date">Dec 13, 2016 - 02:53:47 am</span></div><div id="news_1705" class="news-item"><a title="" href="#">Autoxloo announces partnership with Goraceit</a><span class="date">Dec 02, 2016 - 01:32:11 am</span></div><div id="news_1441" class="news-item"><a title="" href="#">Automotive PPC</a><span class="date">Jun 18, 2016 - 03:30:41 am</span></div><div id="news_1439" class="news-item" style="display: none;"><a title="" href="#">Autoxloo dealer websites are available in UK</a><span class="date">May 25, 2016 - 03:17:19 am</span></div><div id="news_1437" class="news-item" style="display: none;"><a title="" href="#">Offsite SEO Management</a><span class="date">Feb 03, 2016 - 03:12:06 am</span></div><div id="news_1295" class="news-item" style="display: none;"><a title="" href="#">On Site SEO Management</a><span class="date">Nov 18, 2015 - 03:02:52 am</span></div><div id="news_1279" class="news-item" style="display: none;"><a title="" href="#">The Smartest Way to Sell Vehicles</a><span class="date">Oct 06, 2015 - 04:38:14 am</span></div><div id="news_1271" class="news-item" style="display: none;"><a title="" href="#">Walking-Talking Testimonials</a><span class="date">Aug 28, 2015 - 08:25:43 am</span></div><div id="news_1003" class="news-item" style="display: none;"><a title="" href="#">Create Dynamic Discount System</a><span class="date">Jun 10, 2015 - 02:36:26 am</span></div><div id="news_835" class="news-item" style="display: none;"><a title="" href="#">Go Live with Live Video Streaming™</a><span class="date">Mar 23, 2015 - 08:20:59 am</span></div><div id="news_747" class="news-item" style="display: none;"><a title="" href="#"> Integration with Smart Auction</a><span class="date">Jan 21, 2015 - 02:27:40 am</span></div><div id="news_691" class="news-item" style="display: none;"><a title="" href="#"> Slingshot Mobile: Perfect for Mobile Inventory Management</a><span class="date">Dec 10, 2014 - 08:56:20 am</span></div><div id="news_683" class="news-item" style="display: none;"><a title="" href="#"> Successful Posting to Classified Services</a><span class="date">Oct 29, 2014 - 07:30:17 am</span></div><div id="news_681" class="news-item" style="display: none;"><a title="" href="#"> “Wow” experience on YouTube with Autoxloo</a><span class="date">Sep 09, 2014 - 06:12:28 am</span></div><div id="news_679" class="news-item" style="display: none;"><a title="" href="#">Mobile Car Dealer Websites Redefined!</a><span class="date">Jul 18, 2014 - 07:21:20 am</span></div><div id="news_637" class="news-item" style="display: none;"><a title="" href="#"> Multimedia Tools: Make your Dealer Website Dynamic</a><span class="date">Jun 11, 2014 - 07:16:50 am</span></div><div id="news_635" class="news-item" style="display: none;"><a title="" href="#"> Adaptive Design vs Responsive Design</a><span class="date">May 29, 2014 - 07:12:08 am</span></div><div id="news_621" class="news-item" style="display: none;"><a title="" href="#">Etch-A-Word: Create Unique Branded Inventory</a><span class="date">Apr 21, 2014 - 07:02:03 am</span></div><div id="news_615" class="news-item" style="display: none;"><a title="" href="#">Choose your DMS Partner Wisely</a><span class="date">Mar 19, 2014 - 06:22:03 am</span></div><div id="news_611" class="news-item" style="display: none;"><a title="" href="#">Create Event Driven Dynamic Online Experience</a><span class="date">Feb 21, 2014 - 08:49:04 am</span></div><div id="news_607" class="news-item" style="display: none;"><a title="" href="#">Nonstop CRM Integration</a><span class="date">Jan 17, 2014 - 07:19:30 am</span></div><div id="news_605" class="news-item" style="display: none;"><a title="" href="#">Create your Truck Dealer Website with Autoxloo</a><span class="date">Dec 19, 2013 - 07:05:04 am</span></div><div id="news_583" class="news-item" style="display: none;"><a title="" href="#">CRM and Phone Integration made easy </a><span class="date">Nov 14, 2013 - 08:48:48 am</span></div><div id="news_517" class="news-item" style="display: none;"><a title="" href="#">Make-A-Form™: DIY Management</a><span class="date">Oct 22, 2013 - 02:13:32 am</span></div><div id="news_515" class="news-item" style="display: none;"><a title="" href="#">Make-A-Coupon™: Quick custom coupon</a><span class="date">Sep 18, 2013 - 02:13:44 am</span></div><div id="news_497" class="news-item" style="display: none;"><a title="" href="#">QR code: Improve your marketing</a><span class="date">Aug 15, 2013 - 01:36:55 am</span></div><div id="news_495" class="news-item" style="display: none;"><a title="" href="#">SEO: Get traffic to your website</a><span class="date">Jul 16, 2013 - 02:14:14 am</span></div><div id="news_489" class="news-item" style="display: none;"><a title="" href="#"> Buyer's Guide Automation: Seamless delivery to your printer</a><span class="date">Jun 12, 2013 - 01:39:43 am</span></div><div id="news_483" class="news-item" style="display: none;"><a title="" href="#">  Vehicle Inspection Report™: avoid the minefield</a><span class="date">May 13, 2013 - 04:17:10 am</span></div><div id="news_477" class="news-item" style="display: none;"><a title="" href="#"> Design &amp; Content Management with Make-A-Page™</a><span class="date">Apr 10, 2013 - 02:15:03 am</span></div><div id="news_475" class="news-item" style="display: none;"><a title="" href="#">E-brochure: Let's Put The Print Back Into Your Dealership</a><span class="date">Mar 06, 2013 - 02:13:06 am</span></div><div id="news_473" class="news-item" style="display: none;"><a title="" href="#"> Be Available 24/7: Mobile Optimized Solutions</a><span class="date">Feb 04, 2013 - 02:15:34 am</span></div><div id="news_471" class="news-item" style="display: none;"><a title="" href="#"> Dealerships are on the FTC’s radar screen</a><span class="date">Jan 17, 2013 - 02:20:43 am</span></div><div id="news_461" class="news-item" style="display: none;"><a title="" href="#">Pinterest Madness: Join Us! </a><span class="date">Dec 28, 2012 - 04:24:55 am</span></div><div id="news_458" class="news-item" style="display: none;"><a title="" href="#">Convert Visitors Into Customers</a><span class="date">Dec 21, 2012 - 08:17:37 am</span></div><div id="news_456" class="news-item" style="display: none;"><a title="" href="#">CRM: From First Contact to Sale and Beyond</a><span class="date">Dec 14, 2012 - 02:43:49 am</span></div><div id="news_469" class="news-item" style="display: none;"><a title="" href="#">You Are As Good As Your Customers Say You Are</a><span class="date">Nov 02, 2012 - 08:48:04 am</span></div><div id="news_467" class="news-item" style="display: none;"><a title="" href="#">Think Of Us As Your Personal Concierge</a><span class="date">Oct 22, 2012 - 04:11:00 am</span></div><div id="news_340" class="news-item" style="display: none;"><a title="" href="#">New Dealer Review Widget </a><span class="date">Jan 05, 2012 - 09:39:46 am</span></div><div id="news_289" class="news-item" style="display: none;"><a title="" href="#">Keep Track of Your Inventory with The History Feature</a><span class="date">Dec 06, 2011 - 09:37:40 am</span></div><div id="news_266" class="news-item" style="display: none;"><a title="" href="#">Easy Way to Post Your Vehicles on Twitter</a><span class="date">Nov 07, 2011 - 09:37:20 am</span></div><div id="news_121" class="news-item" style="display: none;"><a title="" href="#">In Case You Haven't Heard, Its All Going Mobile! </a><span class="date">Jun 02, 2011 - 09:36:44 am</span></div><div id="news_120" class="news-item" style="display: none;"><a title="" href="#">Call It What You Like, But It's Still A MicroSite!</a><span class="date">May 26, 2011 - 09:35:47 am</span></div><div id="news_107" class="news-item" style="display: none;"><a title="" href="#">Video manager </a><span class="date">Apr 01, 2011 - 12:00:00 am</span></div><div id="news_33" class="news-item" style="display: none;"><a title="" href="#">Dynamic Menu can help increase sales conversion</a><span class="date">Jan 19, 2011 - 09:02:04 am</span></div></div>
+          <div class="news-nav">
+            <ul>
+              <listgroup id="news_paginator"><a class="selected" href="javascript: void(0);">1</a> | <a id="news_page_1" href="javascript: void(0);">2</a> | <a id="news_page_2" href="javascript: void(0);">3</a> | <a id="news_page_3" href="javascript: void(0);">4</a> | <a id="news_page_4" href="javascript: void(0);">5</a> | <a id="news_page_5" href="javascript: void(0);">6</a> | <a id="news_page_6" href="javascript: void(0);">7</a> | <a id="news_page_7" href="javascript: void(0);">8</a> | <a id="news_page_8" href="javascript: void(0);">9</a> | <a id="news_page_9" href="javascript: void(0);">10</a> | <a id="news_page_10" href="javascript: void(0);">11</a> | <a id="news_page_11" href="javascript: void(0);">12</a></listgroup>
+              <li><a title="Read All News" target="_blank" href="http://www.autoxloo.com/news.html" style="margin-left:20px;">See all</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="learn-more"><p>To learn more about DMS <a target="_blank" title="Learn more" href="https://attendee.gotowebinar.com/rt/2344160261960172289">click here</a></p></div>
+    </div>
+  </div>
+  <div class="big-shadow"></div>
+  <div class="partners">
+    <div class="logo-sm ebay"><a target="_blank" style="" title="eBay" href="http://www.ebay.com"> </a></div>
+    <div class="logo-sm auto"><a target="_blank" title="Auto check" href="http://www.autocheck.com/"></a></div>
+    <div class="logo-sm ove"><a target="_blank" title="Ove.com" href="http://www.ove.com/"></a></div>
+    <div class="logo-sm ally"><a target="_blank" title="Ally auto" href="https://www.ally.com/dealer/dealer-products/smartauction"></a></div>
+    <div class="logo-sm auto-trader"><a target="_blank" title="Auto-Trader" href="http://autotrader.com/"></a></div>
+    <div class="logo-sm craigslist"><a target="_blank" title="Craigslist" href="http://www.craigslist.org/"></a></div>
+    <div class="logo-sm facebook"><a target="_blank" title="Facebook" href="https://www.facebook.com/"></a></div>
+    <div class="logo-sm cars"><a target="_blank" title="Cars.com" href="http://www.cars.com/"></a></div>
+    <div class="logo-sm kijiji"><a target="_blank" title="Kijiji" href="http://www.ebayclassifieds.com/"></a></div>
+    <div class="logo-sm carfax"><a target="_blank" title="Carfax" href="http://www.carfax.com/"></a></div>
+    <div class="logo-sm google"><a target="_blank" title="Google" href="http://www.google.com/merchants"></a></div>
+    <div class="logo-sm adesa"><a target="_blank" title="Adesa" href="http://www.adesa.com/"></a></div>
+  </div>
+</div>
+
+
+<script type="text/javascript">/*TODO: remove this tag*/
+    /*TODO: remove this tag*/</script>
+<!-- pls do not change the footer ID! -->
+<!--
+<div id="mainFooter">
+<table border="0" cellpadding="0" cellpadding="0" width="99%" align="center" class="footer_block">
+    <tr>
+        <td width="33%" align="left"><span class="bold">Powered by:</span> <a href="http://www.Autoxloo.com/">Autoxloo</a></td>
+        <td width="33%" align="center" class="footerCopyright">&#169; 2011 All Rights Reserved Worldwide</td>
+        <td width="33%" align="right"><span class="bold">Support:</span> <a href="mailto:Support@Autoxloo.com">Support@Autoxloo.com</a></td>
+    </tr>
+</table>
+</div>
+-->
+</div>
+
+
+</body></html>
