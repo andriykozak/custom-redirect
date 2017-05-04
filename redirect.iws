@@ -2,19 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ca437d2-bb88-4a40-a995-e802c8343b08" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/access/ActivateCustomRedirectWidget.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/access/EnableMap20SubSite.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/access/LoginDmsMainSite.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/access/LoginDmsSubSite.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/access/EnableMap20SubSite.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/chromedriver.exe" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/chromedriver.exe" afterPath="$PROJECT_DIR$/chromedriver.exe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/access/ActivateCustomRedirectWidget.class" afterPath="$PROJECT_DIR$/target/classes/access/ActivateCustomRedirectWidget.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/utility/PropertyLoader.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/environment.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/presettings/AbstractTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/access/ActivateCustomRedirectWidget.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/access/LoginDmsMainSite.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/access/LoginDmsSubSite.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/environment.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/page/AbstractPage$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/page/AbstractPage$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/page/AbstractPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/utility/PropertyLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/presettings/AbstractTest.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/page/AbstractPage.java" afterPath="$PROJECT_DIR$/src/main/java/utility/AbstractFunctionality.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dmsFunctionality/EnableCustomRedirectWidgetFunctionality.class" afterPath="$PROJECT_DIR$/target/classes/dmsFunctionality/EnableCustomRedirectWidgetFunctionality.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dmsFunctionality/LoginToDmsFunctionality.class" afterPath="$PROJECT_DIR$/target/classes/dmsFunctionality/LoginToDmsFunctionality.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dmsFunctionality/SelectJqueryVersionFunctionality.class" afterPath="$PROJECT_DIR$/target/classes/dmsFunctionality/SelectJqueryVersionFunctionality.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dmsFunctionality/SelectMapVersionFunctionality.class" afterPath="$PROJECT_DIR$/target/classes/dmsFunctionality/SelectMapVersionFunctionality.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dmsPageObjects/LoginDmsPage.class" afterPath="$PROJECT_DIR$/target/classes/dmsPageObjects/LoginDmsPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dmsPageObjects/SetJqueryPage.class" afterPath="$PROJECT_DIR$/target/classes/dmsPageObjects/SetJqueryPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dmsPageObjects/SetMapPage.class" afterPath="$PROJECT_DIR$/target/classes/dmsPageObjects/SetMapPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dmsPageObjects/SitesPage.class" afterPath="$PROJECT_DIR$/target/classes/dmsPageObjects/SitesPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/presettings/EnableCustomRedirectWidget.class" afterPath="$PROJECT_DIR$/target/test-classes/presettings/EnableCustomRedirectWidget.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redirect.iml" afterPath="$PROJECT_DIR$/redirect.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redirect.ipr" afterPath="$PROJECT_DIR$/redirect.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redirect.iws" afterPath="$PROJECT_DIR$/redirect.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dmsFunctionality/EnableCustomRedirectWidgetFunctionality.java" afterPath="$PROJECT_DIR$/src/main/java/dmsFunctionality/EnableCustomRedirectWidgetFunctionality.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dmsFunctionality/LoginToDmsFunctionality.java" afterPath="$PROJECT_DIR$/src/main/java/dmsFunctionality/LoginToDmsFunctionality.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dmsFunctionality/SelectJqueryVersionFunctionality.java" afterPath="$PROJECT_DIR$/src/main/java/dmsFunctionality/SelectJqueryVersionFunctionality.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dmsFunctionality/SelectMapVersionFunctionality.java" afterPath="$PROJECT_DIR$/src/main/java/dmsFunctionality/SelectMapVersionFunctionality.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dmsPageObjects/LoginDmsPage.java" afterPath="$PROJECT_DIR$/src/main/java/dmsPageObjects/LoginDmsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dmsPageObjects/SetJqueryPage.java" afterPath="$PROJECT_DIR$/src/main/java/dmsPageObjects/SetJqueryPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dmsPageObjects/SetMapPage.java" afterPath="$PROJECT_DIR$/src/main/java/dmsPageObjects/SetMapPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dmsPageObjects/SitesPage.java" afterPath="$PROJECT_DIR$/src/main/java/dmsPageObjects/SitesPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/presettings/EnableCustomRedirectWidget.java" afterPath="$PROJECT_DIR$/src/test/java/presettings/EnableCustomRedirectWidget.java" />
     </list>
     <ignored path="redirect.iws" />
@@ -195,7 +219,28 @@
     <favorites_list name="redirect" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="EnableCustomRedirectWidget.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/presettings/EnableCustomRedirectWidget.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customredirect.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/customredirect.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -215,20 +260,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/access/VerifyCustomRedirectEnabled.java" />
-        <option value="$PROJECT_DIR$/src/test/java/access/Very.java" />
-        <option value="$PROJECT_DIR$/src/test/java/access/loginDms.java" />
-        <option value="$PROJECT_DIR$/src/test/java/presettings/loginDms.java" />
-        <option value="$PROJECT_DIR$/src/main/java/map20/EnableMap20.java" />
-        <option value="$PROJECT_DIR$/src/main/java/access/LoginDms.java" />
-        <option value="$PROJECT_DIR$/src/main/java/access/LoginDmsSuper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/access/LoginDmsSupervisor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/access/LoginDmsUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/access/EnableMap20.java" />
-        <option value="$PROJECT_DIR$/src/main/java/access/LoginDmsSubSite.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dms/SubsiteLoginPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/access/EnableMap20SubSite.java" />
-        <option value="$PROJECT_DIR$/src/main/java/access/setJquery11.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/page/WaitForJavaScriptLoad.java" />
         <option value="$PROJECT_DIR$/src/main/java/access/ActivateCustomRedirectWidget.java" />
@@ -251,21 +282,35 @@
         <option value="$PROJECT_DIR$/src/main/resources/environment.properties" />
         <option value="$PROJECT_DIR$/src/test/java/presettings/TestBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/page/Page.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dmsFunctionality/SelectMapVersionFunctionality.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dmsPageObjects/LoginDmsPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dmsFunctionality/SelectJqueryVersionFunctionality.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dmsPageObjects/SetJqueryPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/JQueryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/data/JQuery.java" />
         <option value="$PROJECT_DIR$/src/main/java/dmsPageObjects/EnableCustomRedirectWidgetPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/page/AbstractPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dmsPageObjects/Map20Page.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/driver/BrowserType.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/customredirect.properties.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/env/AbstractFunctionality.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/AbstractFunctionality.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dmsFunctionality/SelectMapVersionFunctionality.java" />
         <option value="$PROJECT_DIR$/src/main/java/dmsFunctionality/LoginToDmsFunctionality.java" />
         <option value="$PROJECT_DIR$/src/main/java/dmsFunctionality/EnableCustomRedirectWidgetFunctionality.java" />
-        <option value="$PROJECT_DIR$/src/main/java/page/AbstractPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dmsFunctionality/DragAndDropCustomRedirectWidgetOnPageFunctionality.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dmsFunctionality/SelectJqueryVersionFunctionality.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dmsPageObjects/MapEditorPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/dmsPageObjects/SitesPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/dmsPageObjects/SetMapPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dmsPageObjects/SetJqueryPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dmsPageObjects/LoginDmsPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/env/Environment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/env/EnvironmentFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/AbstractPageObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/PropertyManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utility/driver/DriverFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/testng/AbstractTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/presettings/EnableCustomRedirectWidget.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/customredirect.properties" />
       </list>
     </option>
   </component>
@@ -362,7 +407,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -396,10 +442,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -521,55 +563,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redirect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redirect" />
+              <option name="myItemId" value="utility" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redirect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="redirect" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dmsPageObjects" />
+              <option name="myItemId" value="env" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -595,7 +593,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dmsFunctionality" />
+              <option name="myItemId" value="utility" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="driver" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -621,14 +623,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
+              <option name="myItemId" value="testng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redirect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redirect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewSettings">
@@ -652,33 +675,34 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="access" />
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Andriy\redirect\src\test" />
-      <recent name="C:\Users\Andriy\redirect\src\main" />
-      <recent name="C:\Users\Andriy\redirect\src\test\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="presettings" />
-      <recent name="webdriver" />
-      <recent name="utility" />
-      <recent name="page" />
-      <recent name="dms" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Andriy\redirect\src\test\java\presettings" />
       <recent name="C:\Users\Andriy\redirect" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="access" />
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="testng" />
+      <recent name="utility" />
+      <recent name="presettings" />
+      <recent name="webdriver" />
+      <recent name="page" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Andriy\redirect\src\main\java\utility" />
+      <recent name="C:\Users\Andriy\redirect\src\test" />
+      <recent name="C:\Users\Andriy\redirect\src\main" />
+      <recent name="C:\Users\Andriy\redirect\src\test\resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.EnableCustomRedirectWidget.loginToDms">
+  <component name="RunManager" selected="TestNG.EnableCustomRedirectWidget">
     <configuration default="false" name="EnableCustomRedirectWidget" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1155,6 +1179,28 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1248,8 +1294,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.EnableCustomRedirectWidget.loginToDms" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.EnableCustomRedirectWidget" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.EnableCustomRedirectWidget" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.EnableCustomRedirectWidget.loginToDms" />
         <item index="2" class="java.lang.String" itemvalue="TestNG.C:/Users/Andriy/redirect/src/test/resources/suite.xml" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.EnableCustomRedirectWidget.fistTest" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.EnableCustomRedirectWidget.checkWidgetOnPage" />
@@ -1318,44 +1364,50 @@
       <workItem from="1492081636402" duration="1548000" />
       <workItem from="1492085838294" duration="1634000" />
       <workItem from="1492157438363" duration="3143000" />
-      <workItem from="1492416416661" duration="13158000" />
+      <workItem from="1492416416661" duration="13616000" />
+      <workItem from="1492602523823" duration="4223000" />
+      <workItem from="1492669156374" duration="87000" />
+      <workItem from="1493292403679" duration="13972000" />
+      <workItem from="1493368428614" duration="926000" />
+      <workItem from="1493378354448" duration="45000" />
+      <workItem from="1493895972710" duration="7906000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EnableCustomRedirectWidget - 2017.04.17 at 12h 35m 51s.xml">
+    <history-entry file="EnableCustomRedirectWidget - 2017.04.27 at 17h 52m 41s.xml">
       <configuration name="EnableCustomRedirectWidget" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EnableCustomRedirectWidget - 2017.04.17 at 12h 37m 35s.xml">
+    <history-entry file="EnableCustomRedirectWidget - 2017.04.27 at 17h 54m 06s.xml">
       <configuration name="EnableCustomRedirectWidget" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EnableCustomRedirectWidget - 2017.04.17 at 12h 47m 12s.xml">
+    <history-entry file="EnableCustomRedirectWidget - 2017.04.27 at 17h 55m 19s.xml">
       <configuration name="EnableCustomRedirectWidget" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EnableCustomRedirectWidget - 2017.04.17 at 15h 59m 17s.xml">
+    <history-entry file="EnableCustomRedirectWidget - 2017.04.27 at 17h 58m 09s.xml">
       <configuration name="EnableCustomRedirectWidget" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EnableCustomRedirectWidget - 2017.04.17 at 16h 02m 32s.xml">
+    <history-entry file="EnableCustomRedirectWidget - 2017.04.27 at 18h 00m 53s.xml">
       <configuration name="EnableCustomRedirectWidget" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EnableCustomRedirectWidget_loginToDms - 2017.04.17 at 15h 48m 13s.xml">
-      <configuration name="EnableCustomRedirectWidget.loginToDms" configurationId="TestNG" />
+    <history-entry file="EnableCustomRedirectWidget - 2017.04.27 at 18h 06m 08s.xml">
+      <configuration name="EnableCustomRedirectWidget" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EnableCustomRedirectWidget_loginToDms - 2017.04.17 at 15h 49m 07s.xml">
-      <configuration name="EnableCustomRedirectWidget.loginToDms" configurationId="TestNG" />
+    <history-entry file="EnableCustomRedirectWidget - 2017.04.27 at 18h 08m 58s.xml">
+      <configuration name="EnableCustomRedirectWidget" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EnableCustomRedirectWidget_loginToDms - 2017.04.17 at 15h 55m 55s.xml">
-      <configuration name="EnableCustomRedirectWidget.loginToDms" configurationId="TestNG" />
+    <history-entry file="EnableCustomRedirectWidget - 2017.04.27 at 18h 11m 12s.xml">
+      <configuration name="EnableCustomRedirectWidget" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EnableCustomRedirectWidget_loginToDms - 2017.04.17 at 16h 04m 39s.xml">
-      <configuration name="EnableCustomRedirectWidget.loginToDms" configurationId="TestNG" />
+    <history-entry file="EnableCustomRedirectWidget - 2017.05.04 at 16h 17m 40s.xml">
+      <configuration name="EnableCustomRedirectWidget" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="EnableCustomRedirectWidget_loginToDms - 2017.04.17 at 16h 06m 17s.xml">
-      <configuration name="EnableCustomRedirectWidget.loginToDms" configurationId="TestNG" />
+    <history-entry file="EnableCustomRedirectWidget - 2017.05.04 at 16h 19m 08s.xml">
+      <configuration name="EnableCustomRedirectWidget" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147992000" />
+    <option name="totallyTimeSpent" value="175609000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1370,28 +1422,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3260212" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36988544" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2655068" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.290469" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24886535" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5116279" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4942717" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1401,7 +1454,6 @@
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Aspects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1504,7 +1556,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="7" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1513,97 +1565,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/presettings/EnableCustomRedirectWidget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/access/LoginDmsMainSite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/SetJqueryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/presettings/EnableCustomRedirectWidget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/access/LoginDmsMainSite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/SetJqueryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/presettings/EnableCustomRedirectWidget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/access/LoginDmsMainSite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/SetJqueryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1616,9 +1577,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1659,13 +1618,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/access/LoginDmsSubSite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/access/LoginDmsSubSite.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/page/WaitForJavaScriptLoad.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dms/SubsiteLoginPage.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1.jar!/org/openqa/selenium/WebDriver.class">
@@ -1715,7 +1668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1726,42 +1678,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/environment.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utility/PropertyLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/presettings/1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/presettings/1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/data/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data/JQueryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1769,126 +1690,244 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/access/ActivateCustomRedirectWidget.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/access/LoginDmsMainSite.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/ResourceBundle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="770" column="39" selection-start-line="770" selection-start-column="39" selection-end-line="770" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data/JQuery.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/PropertyLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#205#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/LoginDmsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="50" />
+        <state relative-caret-position="268">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dmsFunctionality/LoginToDmsFunctionality.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dmsFunctionality/DragAndDropCustomRedirectWidgetOnPageFunctionality.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/SetJqueryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dmsFunctionality/SelectJqueryVersionFunctionality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/presettings/AbstractTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/page/AbstractPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getPageUrl#0;class#AbstractPage#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/SetMapPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dmsFunctionality/SelectMapVersionFunctionality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/presettings/EnableCustomRedirectWidget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/SitesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+        <state relative-caret-position="183">
+          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dmsFunctionality/EnableCustomRedirectWidgetFunctionality.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="204">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dmsFunctionality/SelectMapVersionFunctionality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="72" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/SitesPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/SetMapPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#1350#1351#0" expanded="false" />
+            <element signature="e#1387#1388#0" expanded="false" />
+            <element signature="e#1421#1422#0" expanded="false" />
+            <element signature="e#1457#1458#0" expanded="false" />
+            <element signature="e#2058#2059#0" expanded="false" />
+            <element signature="e#2092#2093#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/SetJqueryPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#931#932#0" expanded="false" />
+            <element signature="e#969#970#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/MapEditorPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="e#2462#2463#0" expanded="true" />
+            <element signature="e#2504#2505#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/LoginDmsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding>
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/environment.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/JQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/JQueryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/driver/BrowserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/env/EnvironmentFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/access/ActivateCustomRedirectWidget.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/env/Environment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
+        <state relative-caret-position="306">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding>
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/AbstractPageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/access/LoginDmsMainSite.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/PropertyManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="-327">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/driver/DriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/presettings/AbstractTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="32" column="50" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utility/AbstractFunctionality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dmsFunctionality/LoginToDmsFunctionality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dmsFunctionality/SelectJqueryVersionFunctionality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/testng/AbstractTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/customredirect.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/presettings/EnableCustomRedirectWidget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
           <folding />
         </state>
       </provider>

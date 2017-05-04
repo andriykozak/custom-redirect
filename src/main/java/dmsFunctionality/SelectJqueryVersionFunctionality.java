@@ -1,25 +1,20 @@
 package dmsFunctionality;
 
 import data.JQuery;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-import page.AbstractPage;
+import utility.AbstractFunctionality;
+import utility.driver.DriverFactory;
 
 /**
  * Created by Andriy on 4/4/2017.
  */
-public class SelectJqueryVersionFunctionality extends AbstractPage {
-
-    public SelectJqueryVersionFunctionality(WebDriver webDriver) {
-        super(webDriver);
-        PageFactory.initElements(webDriver, this);
-    }
+public class SelectJqueryVersionFunctionality extends AbstractFunctionality {
 
     dmsPageObjects.SetJqueryPage setJquery;
 
-    //Sets jQuery version
+    //Set jQuery version
     public void setJquery(JQuery jQuery){
-        setJquery = new dmsPageObjects.SetJqueryPage(driver);
+        setJquery = new dmsPageObjects.SetJqueryPage(DriverFactory.getDriver());
+        setJquery.openSetJqueryPage();
         setJquery.clickOnEditButton();
         setJquery.setJqueryVersion(jQuery);
         waitForJSandJQueryToLoad();

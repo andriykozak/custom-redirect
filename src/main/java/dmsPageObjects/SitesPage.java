@@ -5,21 +5,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import page.AbstractPage;
-import utility.PropertyLoader;
+import utility.AbstractPageObject;
+import utility.env.EnvironmentFactory;
 
 /**
  * Created by Andriy on 4/17/2017.
  */
-public class SitesPage extends AbstractPage{
+public class SitesPage extends AbstractPageObject {
 
 
     public SitesPage(WebDriver webDriver) {
         super(webDriver);
         PageFactory.initElements(webDriver, this);
     }
-
-    String sitesUrl = PropertyLoader.loadProperty("superdms.url" + "/settings/sites");
 
     @FindBy(xpath = "//li[@id='site_79']/a")
     private WebElement findSite;
@@ -38,6 +36,10 @@ public class SitesPage extends AbstractPage{
 
     @FindBy(xpath = "//div[@class='ui-dialog-buttonset']//button[.='Ok']")
     private WebElement findOkButton;
+
+    public void openSitesPage(){
+        driver.get(EnvironmentFactory.chooseEnvironment().toString() + "dms/settings/sites/");
+    }
 
     public void openSiteEditor(){
         Actions action = new Actions(driver);

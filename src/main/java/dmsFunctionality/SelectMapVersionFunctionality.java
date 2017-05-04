@@ -1,25 +1,21 @@
 package dmsFunctionality;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-import page.AbstractPage;
+import utility.AbstractFunctionality;
+import utility.driver.DriverFactory;
 
 /**
  * Created by Andriy on 4/4/2017.
  */
 
-public class SelectMapVersionFunctionality extends AbstractPage {
+public class SelectMapVersionFunctionality extends AbstractFunctionality {
 
-    public SelectMapVersionFunctionality(WebDriver webDriver) {
-        super(webDriver);
-        PageFactory.initElements(webDriver, this);
-    }
 
     dmsPageObjects.SetMapPage setMap;
 
-    //Enables MAP 2.0
+    //Enable MAP 2.0
     public void selectMap20(){
-        setMap = new dmsPageObjects.SetMapPage(getWebDriver());
+        setMap = new dmsPageObjects.SetMapPage(DriverFactory.getDriver());
+        setMap.openSetMapPage();
         setMap.doubleClickOnSuperUser();
         waitForJSandJQueryToLoad();
         setMap.openAccessTab();
@@ -30,9 +26,9 @@ public class SelectMapVersionFunctionality extends AbstractPage {
         waitForJSandJQueryToLoad();
     }
 
-    //Enables MAP 1.0
+    //Enable MAP 1.0
     public void selectMap10() {
-        setMap = new dmsPageObjects.SetMapPage(getWebDriver());
+        setMap = new dmsPageObjects.SetMapPage(DriverFactory.getDriver());
         setMap.doubleClickOnSuperUser();
         setMap.openAccessTab();
         setMap.openToolsTab();

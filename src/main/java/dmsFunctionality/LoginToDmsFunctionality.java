@@ -2,25 +2,20 @@ package dmsFunctionality;
 
 import data.User;
 import dmsPageObjects.LoginDmsPage;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-import page.AbstractPage;
+import utility.AbstractFunctionality;
+import utility.driver.DriverFactory;
 
 /**
  * Created by Andriy on 4/4/2017.
  */
-public class LoginToDmsFunctionality extends AbstractPage {
-
-    public LoginToDmsFunctionality(WebDriver webDriver) {
-        super(webDriver);
-        PageFactory.initElements(webDriver, this);
-    }
+public class LoginToDmsFunctionality extends AbstractFunctionality {
 
     private LoginDmsPage loginDmsPage;
 
     //Login to DMS as Supervisor
     public void loginToDmsAsSupervisor(User user) {
-        loginDmsPage = new LoginDmsPage(driver);
+        loginDmsPage = new LoginDmsPage(DriverFactory.getDriver());
+        loginDmsPage.openLoginDmsPage();
         loginDmsPage.fillUserLogin(user);
         loginDmsPage.fillUserPassword(user);
         loginDmsPage.clickOnSignInButton();

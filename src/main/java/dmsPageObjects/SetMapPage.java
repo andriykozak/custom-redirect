@@ -5,20 +5,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import page.AbstractPage;
-import utility.PropertyLoader;
+import utility.AbstractPageObject;
+import utility.env.EnvironmentFactory;
 
 /**
  * Created by Andriy on 3/6/2017.
  */
-public class SetMapPage extends AbstractPage {
+public class SetMapPage extends AbstractPageObject {
 
     public SetMapPage(WebDriver webDriver) {
         super(webDriver);
         PageFactory.initElements(webDriver, this);
     }
-
-    String sitesUrl = PropertyLoader.loadProperty("superdms.url") + "/settings/sites";
 
     @FindBy(xpath = "//li[@id='user_13811']/a")
     private WebElement findSuperUser;
@@ -37,6 +35,10 @@ public class SetMapPage extends AbstractPage {
 
     @FindBy(linkText = "Save")
     private WebElement saveButton;
+
+    public void openSetMapPage(){
+        driver.get(EnvironmentFactory.chooseEnvironment().toString() + "dms/settings/users/");
+    }
 
     public void doubleClickOnSuperUser() {
         Actions action = new Actions(driver);

@@ -6,22 +6,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import page.AbstractPage;
-import utility.PropertyLoader;
+import utility.AbstractPageObject;
+import utility.env.EnvironmentFactory;
 
 /**
  * Created by Irina M. on 19.02.2017.
  */
-public class LoginDmsPage extends AbstractPage {
+public class LoginDmsPage extends AbstractPageObject {
 
     public LoginDmsPage(WebDriver webDriver) {
         super(webDriver);
         PageFactory.initElements(webDriver, this);
     }
-
-    private String loginUrl = PropertyLoader.loadProperty("superdms.url");
-    private String login = PropertyLoader.loadProperty("super.login");
-    private String password = PropertyLoader.loadProperty("super.pw");
 
     @FindBy(how = How.ID, using = "login")
     private WebElement loginInput;
@@ -31,6 +27,10 @@ public class LoginDmsPage extends AbstractPage {
 
     @FindBy(how = How.ID, using = "login2")
     private WebElement signInButton;
+
+    public void openLoginDmsPage(){
+        driver.get(EnvironmentFactory.chooseEnvironment().toString() + "dms/login/");
+    }
 
     public void fillUserLogin(User user){
         loginInput.clear();

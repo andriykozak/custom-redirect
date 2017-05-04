@@ -6,36 +6,37 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import page.AbstractPage;
-import utility.PropertyLoader;
+import utility.AbstractPageObject;
+import utility.env.EnvironmentFactory;
 
 /**
  * Created by Andriy on 1/27/2017.
  */
-public class SetJqueryPage extends AbstractPage {
+public class SetJqueryPage extends AbstractPageObject {
 
     public SetJqueryPage(WebDriver webDriver) {
         super(webDriver);
         PageFactory.initElements(webDriver, this);
     }
 
-    String jQueryUrl = PropertyLoader.loadProperty("superdms.url") + "/settings/website#general";
-    String jQueryVersion = PropertyLoader.loadProperty("jquery11");
-
     @FindBy(xpath = "//tr[@id='jquery_version']//a[.='Edit']")
-    private WebElement editButton;
+    private WebElement findEditButton;
 
     @FindBy(css = "input[name='jquery_version']")
-    private WebElement jQueryInput;
+    private WebElement findJqueryInput;
+
+    public void openSetJqueryPage(){
+        driver.get(EnvironmentFactory.chooseEnvironment().toString() + "dms/settings/website#general/");
+    }
 
     public void clickOnEditButton(){
-        editButton.click();
+        findEditButton.click();
     }
 
     public void setJqueryVersion(JQuery jQuery){
-        jQueryInput.clear();
-        jQueryInput.sendKeys(jQuery.getjQuery());
-        jQueryInput.sendKeys(Keys.RETURN);
+        findJqueryInput.clear();
+        findJqueryInput.sendKeys(jQuery.getjQuery());
+        findJqueryInput.sendKeys(Keys.RETURN);
     }
 }
 

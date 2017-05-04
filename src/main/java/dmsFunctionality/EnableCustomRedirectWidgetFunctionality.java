@@ -1,24 +1,20 @@
 package dmsFunctionality;
 
 import dmsPageObjects.SitesPage;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-import page.AbstractPage;
+import utility.AbstractFunctionality;
+import utility.driver.DriverFactory;
 
 /**
  * Created by Andriy on 4/17/2017.
  */
-public class EnableCustomRedirectWidgetFunctionality extends AbstractPage {
-
-    public EnableCustomRedirectWidgetFunctionality(WebDriver webDriver) {
-        super(webDriver);
-        PageFactory.initElements(webDriver, this);
-    }
+public class EnableCustomRedirectWidgetFunctionality extends AbstractFunctionality {
 
     private SitesPage sitesPage;
 
+    //Enable Custom Redirect widget in Administration
     public void enableCustomRedirectWidget() {
-        sitesPage = new SitesPage(driver);
+        sitesPage = new SitesPage(DriverFactory.getDriver());
+        sitesPage.openSitesPage();
         sitesPage.openSiteEditor();
         waitForJSandJQueryToLoad();
         sitesPage.openWidgetsEditor();
