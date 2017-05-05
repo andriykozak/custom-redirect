@@ -9,6 +9,6 @@ public class UserRepository {
 
     //Supervisor
     public static User getIxlooSupervisor() {
-        return new User("andriykozak", "andriykozak123");
+        return new User("andriykozak", "andriykozak");
     }
 }

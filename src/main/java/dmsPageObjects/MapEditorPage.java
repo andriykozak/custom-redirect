@@ -35,7 +35,7 @@ public class MapEditorPage extends AbstractPageObject {
     @FindBy(css = "span.mapx-button-ico.widget")
     private WebElement findWidgetsLibraryButton;
 
-    @FindBy(css = "ico-widget.widget-custom_redirect")
+    @FindBy(css = ".ico-widget.widget-custom_redirect")
     private WebElement findCustomRedirectWidget;
 
     @FindBy(xpath = "//div[@class='mapx-container']/div[2]/main/div/div/div")

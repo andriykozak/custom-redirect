@@ -29,14 +29,12 @@ public class EnableCustomRedirectWidget extends AbstractTestCase {
         selectMapVersionFunctionality = new SelectMapVersionFunctionality();
         enableCustomRedirectWidgetFunctionality = new EnableCustomRedirectWidgetFunctionality();
         dragAndDropCustomRedirectWidgetOnPageFunctionality = new DragAndDropCustomRedirectWidgetOnPageFunctionality();
-
-
-        loginToDmsFunctionality.loginToDmsAsSupervisor(ixlooSupervisor);
 /*
+        loginToDmsFunctionality.loginToDmsAsSupervisor(ixlooSupervisor);
         selectJqueryVersionFunctionality.setJquery(jQuery11);
         selectMapVersionFunctionality.selectMap20();
         enableCustomRedirectWidgetFunctionality.enableCustomRedirectWidget();
-*/
+        */
         dragAndDropCustomRedirectWidgetOnPageFunctionality.dragAndDropCustomRedirectWidgetOnPage();
     }
 }
