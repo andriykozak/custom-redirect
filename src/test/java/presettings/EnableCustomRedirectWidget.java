@@ -19,22 +19,23 @@ public class EnableCustomRedirectWidget extends AbstractTestCase {
     private LoginToDmsFunctionality loginToDmsFunctionality;
     private SelectJqueryVersionFunctionality selectJqueryVersionFunctionality;
     private SelectMapVersionFunctionality selectMapVersionFunctionality;
-    private EnableCustomRedirectWidgetFunctionality enableCustomRedirectWidgetFunctionality;
-    private DragAndDropCustomRedirectWidgetOnPageFunctionality dragAndDropCustomRedirectWidgetOnPageFunctionality;
+    private SitesPageFunctionality sitesPageFunctionality;
+    private MapEditorFunctionality mapEditorFunctionality;
 
     @Test
     public void loginToDms() {
         loginToDmsFunctionality = new LoginToDmsFunctionality();
         selectJqueryVersionFunctionality = new SelectJqueryVersionFunctionality();
         selectMapVersionFunctionality = new SelectMapVersionFunctionality();
-        enableCustomRedirectWidgetFunctionality = new EnableCustomRedirectWidgetFunctionality();
-        dragAndDropCustomRedirectWidgetOnPageFunctionality = new DragAndDropCustomRedirectWidgetOnPageFunctionality();
-/*
+        sitesPageFunctionality = new SitesPageFunctionality();
+        mapEditorFunctionality = new MapEditorFunctionality();
+
         loginToDmsFunctionality.loginToDmsAsSupervisor(ixlooSupervisor);
+        /*
         selectJqueryVersionFunctionality.setJquery(jQuery11);
         selectMapVersionFunctionality.selectMap20();
         enableCustomRedirectWidgetFunctionality.enableCustomRedirectWidget();
         */
-        dragAndDropCustomRedirectWidgetOnPageFunctionality.dragAndDropCustomRedirectWidgetOnPage();
+        mapEditorFunctionality.dragAndDropCustomRedirectWidgetOnPage();
     }
 }

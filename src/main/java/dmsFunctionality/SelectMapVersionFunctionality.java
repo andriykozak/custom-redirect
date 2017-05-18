@@ -1,5 +1,6 @@
 package dmsFunctionality;
 
+import dmsPageObjects.SelectMapVersionPage;
 import utility.AbstractFunctionality;
 import utility.driver.DriverFactory;
 
@@ -10,31 +11,31 @@ import utility.driver.DriverFactory;
 public class SelectMapVersionFunctionality extends AbstractFunctionality {
 
 
-    dmsPageObjects.SetMapPage setMap;
+    SelectMapVersionPage selectMapVersionPage;
 
     //Enable MAP 2.0
     public void selectMap20(){
-        setMap = new dmsPageObjects.SetMapPage(DriverFactory.getDriver());
-        setMap.openSetMapPage();
-        setMap.doubleClickOnSuperUser();
+        selectMapVersionPage = new SelectMapVersionPage(DriverFactory.getDriver());
+        selectMapVersionPage.openSetMapPage();
+        selectMapVersionPage.doubleClickOnSuperUser();
         waitForJSandJQueryToLoad();
-        setMap.openAccessTab();
-        setMap.openToolsTab();
-        setMap.selectMap2Checkbox();
-        setMap.unselectMap1Checkbox();
-        setMap.clickOnSaveButton();
+        selectMapVersionPage.openAccessTab();
+        selectMapVersionPage.openToolsTab();
+        selectMapVersionPage.selectMap2Checkbox();
+        selectMapVersionPage.unselectMap1Checkbox();
+        selectMapVersionPage.clickOnSaveButton();
         waitForJSandJQueryToLoad();
     }
 
     //Enable MAP 1.0
     public void selectMap10() {
-        setMap = new dmsPageObjects.SetMapPage(DriverFactory.getDriver());
-        setMap.doubleClickOnSuperUser();
-        setMap.openAccessTab();
-        setMap.openToolsTab();
-        setMap.unselectMap2Checkbox();
-        setMap.selectMap1Checkbox();
-        setMap.clickOnSaveButton();
+        selectMapVersionPage = new SelectMapVersionPage(DriverFactory.getDriver());
+        selectMapVersionPage.doubleClickOnSuperUser();
+        selectMapVersionPage.openAccessTab();
+        selectMapVersionPage.openToolsTab();
+        selectMapVersionPage.unselectMap2Checkbox();
+        selectMapVersionPage.selectMap1Checkbox();
+        selectMapVersionPage.clickOnSaveButton();
         waitForJSandJQueryToLoad();
     }
 }

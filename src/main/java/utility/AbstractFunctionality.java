@@ -1,5 +1,6 @@
 package utility;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -42,5 +43,11 @@ public class AbstractFunctionality {
         };
 
         return wait.until(jQueryLoad) && wait.until(jsLoad);
+    }
+
+    public void allertAccept(){
+        Alert alert = DriverFactory.getDriver().switchTo().alert();
+        alert.accept();
+        waitForJSandJQueryToLoad();
     }
 }

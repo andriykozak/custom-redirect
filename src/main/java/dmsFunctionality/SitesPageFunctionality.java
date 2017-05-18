@@ -7,7 +7,7 @@ import utility.driver.DriverFactory;
 /**
  * Created by Andriy on 4/17/2017.
  */
-public class EnableCustomRedirectWidgetFunctionality extends AbstractFunctionality {
+public class SitesPageFunctionality extends AbstractFunctionality {
 
     private SitesPage sitesPage;
 

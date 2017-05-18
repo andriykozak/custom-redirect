@@ -7,7 +7,7 @@ import utility.driver.DriverFactory;
 /**
  * Created by Andriy on 4/27/2017.
  */
-public class DragAndDropCustomRedirectWidgetOnPageFunctionality extends AbstractFunctionality {
+public class MapEditorFunctionality extends AbstractFunctionality {
 
     private MapEditorPage mapEditorPage;
 

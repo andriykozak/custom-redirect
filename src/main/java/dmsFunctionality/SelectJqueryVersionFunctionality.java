@@ -1,6 +1,7 @@
 package dmsFunctionality;
 
 import data.JQuery;
+import dmsPageObjects.SelectJqueryVersionPage;
 import utility.AbstractFunctionality;
 import utility.driver.DriverFactory;
 
@@ -9,14 +10,14 @@ import utility.driver.DriverFactory;
  */
 public class SelectJqueryVersionFunctionality extends AbstractFunctionality {
 
-    dmsPageObjects.SetJqueryPage setJquery;
+    SelectJqueryVersionPage selectJqueryVersionPage;
 
     //Set jQuery version
     public void setJquery(JQuery jQuery){
-        setJquery = new dmsPageObjects.SetJqueryPage(DriverFactory.getDriver());
-        setJquery.openSetJqueryPage();
-        setJquery.clickOnEditButton();
-        setJquery.setJqueryVersion(jQuery);
+        selectJqueryVersionPage = new SelectJqueryVersionPage(DriverFactory.getDriver());
+        selectJqueryVersionPage.openSetJqueryPage();
+        selectJqueryVersionPage.clickOnEditButton();
+        selectJqueryVersionPage.setJqueryVersion(jQuery);
         waitForJSandJQueryToLoad();
     }
 }

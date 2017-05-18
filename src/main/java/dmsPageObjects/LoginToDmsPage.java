@@ -12,9 +12,9 @@ import utility.env.EnvironmentFactory;
 /**
  * Created by Irina M. on 19.02.2017.
  */
-public class LoginDmsPage extends AbstractPageObject {
+public class LoginToDmsPage extends AbstractPageObject {
 
-    public LoginDmsPage(WebDriver webDriver) {
+    public LoginToDmsPage(WebDriver webDriver) {
         super(webDriver);
         PageFactory.initElements(webDriver, this);
     }

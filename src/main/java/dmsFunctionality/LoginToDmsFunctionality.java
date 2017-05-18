@@ -1,7 +1,7 @@
 package dmsFunctionality;
 
 import data.User;
-import dmsPageObjects.LoginDmsPage;
+import dmsPageObjects.LoginToDmsPage;
 import utility.AbstractFunctionality;
 import utility.driver.DriverFactory;
 
@@ -10,15 +10,15 @@ import utility.driver.DriverFactory;
  */
 public class LoginToDmsFunctionality extends AbstractFunctionality {
 
-    private LoginDmsPage loginDmsPage;
+    private LoginToDmsPage loginToDmsPage;
 
     //Login to DMS as Supervisor
     public void loginToDmsAsSupervisor(User user) {
-        loginDmsPage = new LoginDmsPage(DriverFactory.getDriver());
-        loginDmsPage.openLoginDmsPage();
-        loginDmsPage.fillUserLogin(user);
-        loginDmsPage.fillUserPassword(user);
-        loginDmsPage.clickOnSignInButton();
+        loginToDmsPage = new LoginToDmsPage(DriverFactory.getDriver());
+        loginToDmsPage.openLoginDmsPage();
+        loginToDmsPage.fillUserLogin(user);
+        loginToDmsPage.fillUserPassword(user);
+        loginToDmsPage.clickOnSignInButton();
         waitForJSandJQueryToLoad();
     }
 }

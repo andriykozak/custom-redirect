@@ -26,23 +26,26 @@ public class MapEditorPage extends AbstractPageObject {
     @FindBy(css = "div.map-link.pull-right")
     private WebElement findAddNewPageLink;
 
-    @FindBy(xpath = "(//span[@class='ui-button ui-state-default'])[last()]")
-    private WebElement findDeleteLastPageButton;
+    @FindBy(xpath = "(//*[@class='list-item active']/div/span[@title='Remove page']/span")
+    private WebElement findRemoveActivePageButton;
 
-    @FindBy(xpath  = "(//span[@class='mapx-button-ico edit'])[last()]/..")
-    private WebElement findEditLastPageButton;
+    @FindBy(xpath = "(//*[@class='list-item active']/div/span[@title='Edit page']/span")
+    private WebElement findEditActivePageButton;
 
     @FindBy(css = "span.mapx-button-ico.widget")
     private WebElement findWidgetsLibraryButton;
 
     @FindBy(css = ".ico-widget.widget-custom_redirect")
-    private WebElement findCustomRedirectWidget;
+    private WebElement findCustomRedirectWidgetIcon;
 
     @FindBy(xpath = "//div[@class='mapx-container']/div[2]/main/div/div/div")
     private WebElement findMapPageContainer;
 
     @FindBy(xpath = "//div[@class='menu-actions']/div/div[5]/div")
     private WebElement findActivateButton;
+
+    @FindBy(xpath = "//*[contains(@id, 'custom_redirect')]")
+    private WebElement findCustomRedirectWidgetOnThePage;
 
     public void openMapEditorPage(){
         driver.get(EnvironmentFactory.chooseEnvironment().toString() + "dms/tools/make_a_page_2/");
@@ -65,7 +68,7 @@ public class MapEditorPage extends AbstractPageObject {
     public void dragAndDropCustomRedirectWidget(){
         Actions actions = new Actions(driver);
         StringBuffer verificationErrors = new StringBuffer();
-        actions.dragAndDrop(findCustomRedirectWidget, findMapPageContainer).perform();
+        actions.dragAndDrop(findCustomRedirectWidgetIcon, findMapPageContainer).perform();
         try {
             assertEquals("Dropped!", findMapPageContainer.getText());
         } catch (Error e) {
@@ -73,7 +76,16 @@ public class MapEditorPage extends AbstractPageObject {
         }
     }
 
+    public void openCustomRedirectWidgetSettings(){
+        Actions actions = new Actions(driver);
+        actions.doubleClick(findCustomRedirectWidgetOnThePage).perform();
+    }
+
     public void activateThePage(){
         findActivateButton.click();
+    }
+
+    public void editActivePage(){
+        findEditActivePageButton.click();
     }
 }

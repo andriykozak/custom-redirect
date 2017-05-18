@@ -12,9 +12,9 @@ import utility.env.EnvironmentFactory;
 /**
  * Created by Andriy on 1/27/2017.
  */
-public class SetJqueryPage extends AbstractPageObject {
+public class SelectJqueryVersionPage extends AbstractPageObject {
 
-    public SetJqueryPage(WebDriver webDriver) {
+    public SelectJqueryVersionPage(WebDriver webDriver) {
         super(webDriver);
         PageFactory.initElements(webDriver, this);
     }

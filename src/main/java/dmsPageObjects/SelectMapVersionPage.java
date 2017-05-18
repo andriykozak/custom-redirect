@@ -11,9 +11,9 @@ import utility.env.EnvironmentFactory;
 /**
  * Created by Andriy on 3/6/2017.
  */
-public class SetMapPage extends AbstractPageObject {
+public class SelectMapVersionPage extends AbstractPageObject {
 
-    public SetMapPage(WebDriver webDriver) {
+    public SelectMapVersionPage(WebDriver webDriver) {
         super(webDriver);
         PageFactory.initElements(webDriver, this);
     }
