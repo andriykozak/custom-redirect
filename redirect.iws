@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ca437d2-bb88-4a40-a995-e802c8343b08" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/dmsFunctionality/DragAndDropCustomRedirectWidgetOnPageFunctionality.java" afterPath="$PROJECT_DIR$/src/main/java/dmsFunctionality/MapEditorFunctionality.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/dmsFunctionality/EnableCustomRedirectWidgetFunctionality.java" afterPath="$PROJECT_DIR$/src/main/java/dmsFunctionality/SitesPageFunctionality.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/dmsPageObjects/LoginDmsPage.java" afterPath="$PROJECT_DIR$/src/main/java/dmsPageObjects/LoginToDmsPage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/dmsPageObjects/SetJqueryPage.java" afterPath="$PROJECT_DIR$/src/main/java/dmsPageObjects/SelectJqueryVersionPage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/dmsPageObjects/SetMapPage.java" afterPath="$PROJECT_DIR$/src/main/java/dmsPageObjects/SelectMapVersionPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dmsPageObjects/MapEditorPage.class" afterPath="$PROJECT_DIR$/target/classes/dmsPageObjects/MapEditorPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utility/AbstractFunctionality$1.class" afterPath="$PROJECT_DIR$/target/classes/utility/AbstractFunctionality$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utility/AbstractFunctionality$2.class" afterPath="$PROJECT_DIR$/target/classes/utility/AbstractFunctionality$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utility/AbstractFunctionality.class" afterPath="$PROJECT_DIR$/target/classes/utility/AbstractFunctionality.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/presettings/EnableCustomRedirectWidget.class" afterPath="$PROJECT_DIR$/target/test-classes/presettings/EnableCustomRedirectWidget.class" />
+    <list default="true" id="5ca437d2-bb88-4a40-a995-e802c8343b08" name="Default" comment="Add Widget Settings pageObject and Widjet Settings Functionality&#10;Rename some titles of classes">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/redirect.iws" afterPath="$PROJECT_DIR$/redirect.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/data/UserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/data/UserRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dmsPageObjects/MapEditorPage.java" afterPath="$PROJECT_DIR$/src/main/java/dmsPageObjects/MapEditorPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utility/AbstractFunctionality.java" afterPath="$PROJECT_DIR$/src/main/java/utility/AbstractFunctionality.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/presettings/EnableCustomRedirectWidget.java" afterPath="$PROJECT_DIR$/src/test/java/presettings/EnableCustomRedirectWidget.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/customredirect.properties" afterPath="$PROJECT_DIR$/target/classes/customredirect.properties" />
     </list>
     <ignored path="redirect.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -197,7 +182,30 @@
     <favorites_list name="redirect" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="WidgetSettingsFunctionality.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dmsFunctionality/WidgetSettingsFunctionality.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WidgetSettingsPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/WidgetSettingsPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -364,8 +372,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -518,6 +524,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1241,7 +1249,8 @@
       <workItem from="1493905141905" duration="5087000" />
       <workItem from="1493967737423" duration="5644000" />
       <workItem from="1495028972055" duration="4701000" />
-      <workItem from="1495088455063" duration="21229000" />
+      <workItem from="1495088455063" duration="21750000" />
+      <workItem from="1495694082235" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="Added:  PropertyManager, EnvironmentFactory, DriverFactory, AbstractFunctionality. Refactoring">
       <created>1493904140017</created>
@@ -1257,7 +1266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493971910928</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Widget Settings pageObject and Widjet Settings Functionality&#10;Rename some titles of classes">
+      <created>1495119344147</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1495119344147</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1293,7 +1309,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213000000" />
+    <option name="totallyTimeSpent" value="213531000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1308,12 +1324,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1335,6 +1350,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1408,7 +1424,8 @@
     <MESSAGE value="Added commit for unversioned files:  PropertyManager, EnvironmentFactory, DriverFactory, AbstractFunctionality. Refactoring" />
     <MESSAGE value="qqq" />
     <MESSAGE value="Changes for demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes for demo" />
+    <MESSAGE value="Add Widget Settings pageObject and Widjet Settings Functionality&#10;Rename some titles of classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Widget Settings pageObject and Widjet Settings Functionality&#10;Rename some titles of classes" />
   </component>
   <component name="VssConfiguration">
     <CheckoutOptions>
@@ -1592,7 +1609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1600,7 +1616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1616,7 +1631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
           <caret line="45" column="101" selection-start-line="45" selection-start-column="94" selection-end-line="45" selection-end-column="101" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1624,7 +1638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1632,7 +1645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="102" selection-start-line="9" selection-start-column="102" selection-end-line="9" selection-end-column="127" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1648,7 +1660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1663,7 +1674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1671,10 +1681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="e#441#442#0" expanded="false" />
-            <element signature="e#472#473#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1682,7 +1688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1690,7 +1695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1698,7 +1702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1714,17 +1717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="38" column="71" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dmsFunctionality/WidgetSettingsFunctionality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1736,14 +1728,6 @@
             <element signature="e#1233#1234#0" expanded="true" />
             <element signature="e#1269#1270#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/WidgetSettingsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1803,6 +1787,24 @@
         <state relative-caret-position="-310">
           <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dmsPageObjects/WidgetSettingsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dmsFunctionality/WidgetSettingsFunctionality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
