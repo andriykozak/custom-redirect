@@ -2,9 +2,11 @@ package dmsPageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utility.AbstractPageObject;
+import utility.env.EnvironmentFactory;
 
 /**
  * Created by Andriy on 5/18/2017.
@@ -39,7 +41,7 @@ public class WidgetSettingsPage extends AbstractPageObject {
     @FindBy(xpath = "//*[@class='ui-button-text'][text()='Close']")
     private WebElement findRemoveItemButton;
 
-    @FindBy(xpath = "//*[@class='ui-button-text'][text()='Ok']")
+    @FindBy(xpath = "//*[@class='ui-dialog-buttonset']/button[1]")
     private WebElement findOkButton;
 
 
@@ -76,27 +78,36 @@ public class WidgetSettingsPage extends AbstractPageObject {
     }
 
     public void clickOkButton(){
-        findOkButton.click();
+        Actions actions = new Actions(driver);
+        actions.moveToElement(findOkButton).sendKeys("").perform();
     }
 
-    public void fillDefaultRedirect(){
+    public void fillDefaultRedirect(String defaultRedirectURL){
         findDefaultRedirectField.clear();
-        findDefaultRedirectField.sendKeys();
+        findDefaultRedirectField.sendKeys(defaultRedirectURL);
     }
 
-    public void fillTitleField(){
+    public void clearDefaultRedirect() {
+        findDefaultRedirectField.clear();
+    }
+
+    public void fillTitleField(String titleCustomRedirect){
         findTitleField.clear();
-        findTitleField.sendKeys();
+        findTitleField.sendKeys(titleCustomRedirect);
     }
 
-    public void fillRedirectFromField(){
+    public void fillRedirectFromField(String redirectFrom){
         findRedirectFromField.clear();
-        findRedirectFromField.sendKeys();
+        findRedirectFromField.sendKeys(redirectFrom);
     }
 
-    public void fillRedirectToField(){
+    public void fillRedirectToField(String redirectTo){
         findRedirectToField.clear();
-        findRedirectToField.sendKeys();
+        findRedirectToField.sendKeys(redirectTo);
+    }
+
+    public void openHomePageDWS(){
+        driver.get(EnvironmentFactory.chooseEnvironment().toString());
     }
 }
 

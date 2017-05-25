@@ -5,8 +5,10 @@ import data.JQueryRepository;
 import data.User;
 import data.UserRepository;
 import dmsFunctionality.*;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import testng.AbstractTestCase;
+import utility.driver.DriverFactory;
 
 
 /**
@@ -21,6 +23,7 @@ public class EnableCustomRedirectWidget extends AbstractTestCase {
     private SelectMapVersionFunctionality selectMapVersionFunctionality;
     private SitesPageFunctionality sitesPageFunctionality;
     private MapEditorFunctionality mapEditorFunctionality;
+    private WidgetSettingsFunctionality widgetSettingsFunctionality;
 
     @Test
     public void loginToDms() {
@@ -37,5 +40,25 @@ public class EnableCustomRedirectWidget extends AbstractTestCase {
         enableCustomRedirectWidgetFunctionality.enableCustomRedirectWidget();
         */
         mapEditorFunctionality.dragAndDropCustomRedirectWidgetOnPage();
+    }
+
+    @Test(description = "verify Default Redirect to google.com")
+    public void verifyDefaultRedirect(){
+        widgetSettingsFunctionality = new WidgetSettingsFunctionality();
+        loginToDmsFunctionality = new LoginToDmsFunctionality();
+        loginToDmsFunctionality.loginToDmsAsSupervisor(ixlooSupervisor);
+        widgetSettingsFunctionality.setDefaultRedirect();
+        widgetSettingsFunctionality.openHomePageDWS();
+        Assert.assertTrue(DriverFactory.getDriver().getCurrentUrl().contains("www.google"));
+    }
+
+    @Test(description = "verify Custom Redirect to google.com")
+    public void verifyCustomRedirect(){
+        widgetSettingsFunctionality = new WidgetSettingsFunctionality();
+        loginToDmsFunctionality = new LoginToDmsFunctionality();
+        loginToDmsFunctionality.loginToDmsAsSupervisor(ixlooSupervisor);
+        widgetSettingsFunctionality.setCustomRedirect();
+        widgetSettingsFunctionality.openHomePageDWS();
+        Assert.assertTrue(DriverFactory.getDriver().getCurrentUrl().contains("www.google"));
     }
 }

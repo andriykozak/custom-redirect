@@ -13,12 +13,20 @@ public class PropertyManager {
     private static String browserName;
     private static int implicitWait;
     private static String baseUrl;
+    private static String defaultRedirectUrl;
+    private static String titleCustomRedirect;
+    private static String redirectFrom;
+    private static String redirectTo;
 
     public static void getProperties() {
         bundle = ResourceBundle.getBundle("customredirect");
         browserName = bundle.getString("browser.type");
         implicitWait = Integer.parseInt(bundle.getString("implicit.wait"));
         baseUrl = bundle.getString("base.url");
+        defaultRedirectUrl = bundle.getString("default.redirect");
+        titleCustomRedirect = bundle.getString("title.custom.redirect");
+        redirectFrom = bundle.getString("redirect.from");
+        redirectTo = bundle.getString("redirect.to");
     }
 
     //Get browser type from properties
@@ -57,4 +65,27 @@ public class PropertyManager {
         return returnEnvironment;
     }
 
+    //Get default redirect URL from properties
+    public static String getDefaultRedirectURL(){
+        getProperties();
+        return defaultRedirectUrl;
+    }
+
+    //Get title of custom redirect from properties
+    public static String getTitleCustomRedirect(){
+        getProperties();
+        return titleCustomRedirect;
+    }
+
+    //Get Redirect FROM for custom redirect, from properties
+    public static String getRedirectFrom(){
+        getProperties();
+        return redirectFrom;
+    }
+
+    //Get Redirect TO for custom redirect, from properties
+    public static String getRedirectTo(){
+        getProperties();
+        return redirectTo;
+    }
 }

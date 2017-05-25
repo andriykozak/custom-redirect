@@ -26,10 +26,10 @@ public class MapEditorPage extends AbstractPageObject {
     @FindBy(css = "div.map-link.pull-right")
     private WebElement findAddNewPageLink;
 
-    @FindBy(xpath = "(//*[@class='list-item active']/div/span[@title='Remove page']/span")
+    @FindBy(xpath = "//*[@class='list-item active']/div/span[@title='Remove page']/span")
     private WebElement findRemoveActivePageButton;
 
-    @FindBy(xpath = "(//*[@class='list-item active']/div/span[@title='Edit page']/span")
+    @FindBy(xpath = "//*[@class='list-item active']/div/span[@title='Edit page']/span")
     private WebElement findEditActivePageButton;
 
     @FindBy(css = "span.mapx-button-ico.widget")
